@@ -1,4 +1,4 @@
-# Terminal Shortcuts
+# Terminator Shortcuts
 
 CNTRL + D               Close current session in terminal
 CNTRL + L               Clears terminal commands
