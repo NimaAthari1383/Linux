@@ -1,4 +1,12 @@
-## IPTables Commands
+# Some of Debian IPTables Commands
+
+## Table Of Contents
+
+- [Flush Rules](#flush-rules)
+- [Reset Defaults](#reset-defaults)
+- [Default Policies For Mor Security](#default-policies-for-mor-security)
+
+---
 
 | Command                           | What it does                      | When to use it        |
 |-----------------------------------|-----------------------------------|-----------------------|
@@ -7,7 +15,10 @@
 | `iptables -L -v -n`               |                                   |                       |
 | `iptables -nL`                    |                                   |                       |
 
-### Flush Rules
+---
+
+## Flush Rules
+
 | Command                           | What it does                      | When to use it        |
 |-----------------------------------|-----------------------------------|-----------------------|
 | `iptables -F`                     | Flush Rules                       |                       |
@@ -19,19 +30,27 @@
 | `iptables -t nat -X`              | Flush Rules                       |                       |
 | `iptables -t mangle -X`           | Flush Rules                       |                       |
 
+---
 
-### Reset Defaults
+## Reset Defaults
+
 | Command                           | What it does                      | When to use it        |
 |-----------------------------------|-----------------------------------|-----------------------|
 | `iptables -P INPUT ACCEPT`        | Reset Defaults                    |                       |
 | `iptables -P OUTPUT ACCEPT`       | Reset Defaults                    |                       |
 | `iptables -P FORWARD ACCEPT`      | Reset Defaults                    |                       |
 
+---
 
-<!-- Default Policies For Mor Security -->
-sudo iptables -P INPUT DROP
-sudo iptables -P OUTPUT ACCEPT
-sudo iptables -P FORWARD DROP
+## Default Policies For Mor Security
+
+| Command                           | What it does                      | When to use it        |
+|-----------------------------------|-----------------------------------|-----------------------|
+| `sudo iptables -P INPUT DROP`     | Default Policies                  |                       |
+| `sudo iptables -P OUTPUT ACCEPT`  | Default Policies                  |                       |
+| `sudo iptables -P FORWARD DROP`   | Default Policies                  |                       |
+
+---
 
 <!-- Accept Loopbak -->
 sudo iptables -A INPUT -i lo -j ACCEPT

@@ -24,17 +24,7 @@
 
 ## Basic Commands
 
-| Command                                                                           | What it does                                      | When to use it                                                |
-|-----------------------------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------|
-| `cp /home/USERNAME/.bashrc /root/`                                                | Copy bash configs in root user                    | **Allways** - It's not critical but make me work easier.      |
-| `echo "HELLO WORLD!" >> helloworld.txt`                                           | Append "HELLO WORLD!" to hellowold.txt file.      | **Sometimes**                                                 |
-| `echo "linux ALL=(ALL) NOPASSWD:ALL" PIPELINE sudo tee /etc/sudoers.d/linux`      | Sudo access without pasword                       | **Never** — Use with safty                                    |
-| `sysctl -a`                                                                       | Shows kernel's parameters                         | **Rarely**                                                    |
-| `sysctl --system`                                                                 | Save your changes                                 |                                                               |
-| `lsb_release -cs`                                                                 | Check your distro                                 | **Rarely**                                                    |
-| `sed -i 's/#Port 22/Port 22/g' /etc/ssh/sshd_config`                              | Uncomment Port22, and use it                      | **Rarely**                                                    |
-
-sudo code . --user-data-dir --no-sandbox
+A list of some useful commands. For more details and a more useful table of commands, visit "" .
 
 ***[🔝 Table Ofcreate-swap-file Contents](#table-of-contents)***
 
@@ -65,11 +55,14 @@ sudo code . --user-data-dir --no-sandbox
 ---
 
 ### List Disks
-lsblk
+
+| Command                           | What it does                              | When to use it        |
+|-----------------------------------|-------------------------------------------|-----------------------|
+| `lsblk`                           |                                           | **Sometimes**         |
 
 ***[🔝 Table Of Contents](#table-of-contents)***
 
-----
+---
 
 ## Network Managing Commands
 
